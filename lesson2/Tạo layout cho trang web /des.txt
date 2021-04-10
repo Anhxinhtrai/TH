@@ -1,0 +1,3 @@
+Tạo trang web có layout gồm các phần header, footer, headlink, content.
+Các phần trong layout tách riêng từng file, sử dụng lệnh include hoặc require để triệu gọi lại file.
+

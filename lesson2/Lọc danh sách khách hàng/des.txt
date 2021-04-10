@@ -1,0 +1,2 @@
+Sử dụng trang web hiển thị danh sách khách hàng từ bài trước. Xây dựng hàm để lọc các khách hàng có ngày sinh nằm trong khoảng tùy chọn.
+ Trang index.php có thêm form để lọc khách hàng theo ngày sinh từ …. đến ….

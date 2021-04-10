@@ -1,0 +1,3 @@
+Tạo một ứng dụng PHP đơn giản. Xem các log được ghi nhận của ứng dụng.
+
+Có 2 loại log cần theo dõi: Log truy cập và Log lỗi.
