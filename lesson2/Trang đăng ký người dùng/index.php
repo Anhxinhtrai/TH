@@ -19,16 +19,58 @@
 </form>
 
 <?php
+        $name = '';
+        $email= '';
+        $phone= '';
 if ($_SERVER["REQUEST_METHOD"] = "POST") {
-$user= $_POST["username"];
-$email = $_POST["email"];
-$phone = $_POST["phone"];
+    $name = $_POST["username"];
+    $email = $_POST["email"];
+    $phone = $_POST["phone"];
 }
-if (empty($user) || empty($email) || empty($phone)){
-     echo "hãy điền đầy đủ thông tin";
-}else{
-    echo "oke";
+if (empty($name) || empty($email) || empty($phone)) {
+    echo "hãy điền đầy đủ thông tin";
+} else {
+    saveDataJSON("users.json", $name, $email, $phone);
 }
+
+function loadRegistrations($filename)
+{
+    $jsondata = file_get_contents($filename);
+    $arr_data = json_decode($jsondata, true);
+    return $arr_data;
+}
+
+function saveDataJSON($filename, $name, $email, $phone)
+{
+    try {
+        $contact = array('name' => $name, 'email' => $email, 'phom\e' => $phone);
+        $arr_data = loadRegistrations($filename); // chuyển đổi dữ liệu json thành mảng
+        array_push($arr_data,$contact); // push dữ liệu người dùng vào mảng
+        $jsondata = json_encode($arr_data ,JSON_PRETTY_PRINT); // Chuyển đổi mảng đã cập nhật thành JSON
+        file_put_contents($filename,$jsondata); // ghi dữ liệu json vào tệp data.json
+        echo "lưu thành công";
+    } catch (Exception $e) {
+        echo 'Lỗi: ', $e->getMessage(), "\n";
+    }
+}
+
 ?>
+<?php
+$registrations = loadRegistrations('users.json');
+?>
+<h2>Registration list</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    <?php foreach ($registrations as $registration): ?>
+        <tr>
+            <td><?= $registration['name']; ?></td>
+            <td><?= $registration['email']; ?></td>
+            <td><?= $registration['phone']; ?></td>
+        </tr>
+    <?php endforeach; ?>
 </body>
 </html>
