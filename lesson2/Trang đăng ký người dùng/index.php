@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] = "POST") {
 if (empty($name) || empty($email) || empty($phone)) {
     echo "hãy điền đầy đủ thông tin";
 } else {
-    saveDataJSON("users.json", $name, $email, $phone);
+    saveDataJSON("data.json", $name, $email, $phone);
 }
 
 function loadRegistrations($filename)
@@ -56,7 +56,7 @@ function saveDataJSON($filename, $name, $email, $phone)
 
 ?>
 <?php
-$registrations = loadRegistrations('users.json');
+$registrations = loadRegistrations('data.json');
 ?>
 <h2>Registration list</h2>
 <table>

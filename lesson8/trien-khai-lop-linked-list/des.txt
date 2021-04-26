@@ -1,0 +1,29 @@
+Trong phần này, chúng ta sẽ phát triển một chương trình cho phép cài đặt cấu trúc LinkedList đơn giản để lưu một tập dữ liệu bất kỳ.
+ Chương trình gồm 2 lớp Node và LinkList như sơ đồ mô tả sau:
+
+Lớp Node chứa thông tin về một node trong danh sách liên kết.
+
+Bao gồm:
+
+Thuộc tính data
+
+Thuộc tính node đằng sau.
+
+Phương thức đọc dữ liệu của node
+
+Lớp LinkList bao gồm:
+
+Node đầu tiên
+
+Node cuối cùng
+
+Số lượng node
+
+Phương thức thêm một node vào đầu
+
+Phương thức thêm một nốc vào phía sau
+
+Phương thức lấy ra số lượng node
+
+Phương thức đọc linkedlist
+

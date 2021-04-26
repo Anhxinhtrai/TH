@@ -1,0 +1,26 @@
+Hướng dẫn
+Hãy bắt đầu xây dựng một hệ thống hàng đợi ưu tiên bằng cách định nghĩa một đối tượng sẽ lưu trữ các phần tử của hàng đợi.
+Lớp Patient có 2 thuộc tính:
+
+$name - tên của bệnh nhân
+$code - mã của bệnh nhân
+Giá trị cho mã sẽ là một số nguyên đại diện cho mức độ ưu tiên, hoặc mức độ nghiêm trọng của bệnh nhân.
+Bây giờ chúng ta cần phải xác định lại hàm dequeue() để loại bỏ các phần tử trong hàng đợi với mức ưu tiên cao nhất.
+Chúng ta xác định phần tử ưu tiên cao nhất là phần tử có mã thấp nhất.
+
+Hãy sử dụng hàm __toString() để hiển thị danh sách bệnh nhân, giúp cho việc quan sát các phần tử có trong Queue trở nên dễ dàng hơn.
+
+Mô phỏng kịch bản khám bệnh:
+
+Một bệnh nhân mới tên là Smith, có mã bệnh nhân là 5
+Một bệnh nhân mới tên là Jones, có mã bệnh nhân là 4
+Một bệnh nhân mới tên là Fehrenbach, có mã bệnh nhân là 6
+Một bệnh nhân mới tên là Brown, có mã bệnh nhân là 1
+Một bệnh nhân mới tên là Ingram, có mã bệnh nhân là 1
+Hiển thị danh sách bệnh nhân
+Khám bệnh cho người đầu tiên trong hàng đợi (đã sắp xếp theo độ ưu tiên)
+Hiển thị tên của người bệnh đã được khám
+Hiển thị danh sách bệnh nhân còn lại
+Khám bệnh
+Hiển thị tên của người bệnh đã được khám
+Hiển thị danh sách bệnh nhân còn lại

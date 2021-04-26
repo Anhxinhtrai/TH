@@ -1,0 +1,21 @@
+Hướng dẫn
+Bước 1: Tạo một lớp tên là Dancer với 2 thuộc tính:
+
+$name: Tên của dancer
+$gender: Giới tính của dancer
+Bước 2: Tạo 2 hàng đợi (sử dụng SPL)
+
+Bước 3: Tạo một số dancer nam và dancer nữ. Lần lượt thêm các dancer nam và nữ vào trong hàng đợi tương ứng
+
+Bước 4: Viết hàm để lấy ra người đứng đầu hàng nam và người đứng đầu hàng nữ
+
+Nếu một trong hai hàng đợi bị rỗng thì tung ra một thông báo
+Nếu cả hai hàng đợi đều có người thì tạo thành một cặp và thông báo tên của cặp đó
+Bước 5: Viết kịch bản
+
+Thêm 4 dancer nam
+Thêm 3 dancer nữ
+Lần lượt tạo các cặp nhảy cho đến khi ai đó phải đợi
+Thêm 3 bạn nữ
+Lần lượt tạo các cặp nhảy cho đến khi ai đó phải đợi
+Hiển thị số người đang phải đợi

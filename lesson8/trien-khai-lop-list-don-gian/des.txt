@@ -1,0 +1,16 @@
+Trong phần này, chúng ta sẽ phát triển một chương trình cho phép cài đặt cấu trúc danh sách đơn giản để lưu một tập dữ liệu bất kỳ.
+Lớp ArrayList trong chương trình gồm:
+
+Các thuộc tính
+
+Mảng đối tượng danh sách chứa các phần tử
+
+Các phương thức:
+
+Phương thức khởi tạo không tham số
+
+Phương thức thêm một phần tử mới vào danh sách: add()
+
+Phương thức truy cập một phần tử trong danh sách: get()
+
+Phương thức xóa một phần tử trong danh sách: remove()
